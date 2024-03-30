@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="inValidPost(failed)">
+    <classes>
+      <class name="demo.Example2Test">
+        <methods>
+          <include name="afterTest"/>
+          <include name="TC01_StatusCodeTest"/>
+          <include name="TC02_MessageChecked"/>
+          <include name="TC03_verifyOnMessageContainName"/>
+        </methods>
+      </class> <!-- demo.Example2Test -->
+    </classes>
+  </test> <!-- inValidPost(failed) -->
+  <test thread-count="5" name="inValidGet(failed)">
+    <classes>
+      <class name="com.restapi.testcase.Example2Test">
+        <methods>
+          <include name="TC02_MessageChecked"/>
+          <include name="TC03_verifyOnMessageContent"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.restapi.testcase.Example2Test -->
+    </classes>
+  </test> <!-- inValidGet(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
